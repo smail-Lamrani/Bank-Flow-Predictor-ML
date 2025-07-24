@@ -1,0 +1,13 @@
+/* Styles pour la page d'accueil */
+QFrame#HomeView {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+QWebEngineView {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0}

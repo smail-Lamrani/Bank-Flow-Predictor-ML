@@ -1,0 +1,104 @@
+/* General Styling for QFrame (ViewFrame itself) */
+ViewFrame {
+    background-color: #f0f0f0; /* Light gray background */
+}
+
+/* GroupBox Styling */
+QGroupBox {
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid #c0c0c0; /* Light gray border */
+    border-radius: 5px;
+    margin-top: 10px; /* Space above the title */
+    background-color: #ffffff; /* White background for group content */
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left; /* Position at the top left */
+    padding: 0 5px 0 5px;
+    left: 10px; /* Indent title slightly */
+    color: #333333; /* Dark gray title text */
+}
+
+/* QLabel Styling */
+QLabel {
+    font-size: 12px;
+    color: #333333; /* Dark gray text */
+    padding: 2px;
+}
+
+/* QPushButton Styling */
+QPushButton {
+    background-color: #0078d7; /* Blue background */
+    color: white; /* White text */
+    border: 1px solid #005a9e; /* Darker blue border */
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 12px;
+    min-width: 80px;
+}
+
+QPushButton:hover {
+    background-color: #005a9e; /* Darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #003f6f; /* Even darker blue when pressed */
+}
+
+/* QComboBox Styling */
+QComboBox {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    font-size: 12px;
+    min-height: 20px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left-width: 1px;
+    border-left-color: #c0c0c0;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+QComboBox QAbstractItemView { /* Style for the dropdown list */
+    border: 1px solid #c0c0c0;
+    background-color: white;
+    selection-background-color: #0078d7; /* Blue selection */
+    color: #333333;
+}
+
+/* QSpinBox Styling */
+QSpinBox {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    font-size: 12px;
+    min-height: 20px;
+}
+
+/* QLineEdit Styling */
+QLineEdit {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: white;
+    font-size: 12px;
+}
+
+/* QTextEdit Styling (for the log) */
+QTextEdit {
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    background-color: #fdfdfd; /* Slightly off-white */
+    font-family: Consolas, Courier New, monospace; /* Monospaced font for logs */
+    font-size: 11px;
+}

@@ -1,0 +1,79 @@
+/* data_exploration_frame.css */
+
+QFrame#DataExplorationFrame {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+QLabel {
+    font-size: 12px;
+    color: #333;
+}
+
+QTableView#t_show {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    gridline-color: #ccc;
+    font-family: Calibri, sans-serif;
+    /* font-size: 12px; */
+    alternate-background-color: #f9f9f9;
+    selection-background-color: #cceeff;
+    selection-color: #000000;
+}
+
+QTableView#t_show::item {
+    padding: 5px;
+    /* Attempt to center text; if this doesn't work, consider setting alignment in the model or delegate */
+    text-align: center;
+}
+
+QComboBox#combo_view {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 3px;
+    border-radius: 3px;
+    min-width: 100px;
+}
+
+QComboBox#combo_view::drop-down {
+    border: none;
+}
+
+QComboBox#combo_view::down-arrow {
+    width: 16px;
+    height: 16px;
+}
+
+QHeaderView::section {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 4px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+QPushButton#btn_clean_data {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px;
+}
+
+/* Hover effect for QPushButton */
+QPushButton#btn_clean_data:hover {
+    background-color: #45a049;
+}
+
+QToolButton#btn_browse {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 3px;
+}
+
+/* Hover effect for QToolButton */
+QToolButton#btn_browse:hover {
+    background-color: #007bb5;
+}
